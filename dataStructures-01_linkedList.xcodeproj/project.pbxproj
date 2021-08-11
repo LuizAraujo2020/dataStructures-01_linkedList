@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		6FD6131F26C37853008FE7D4 /* dataStructures-01_linkedList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dataStructures-01_linkedList"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6132226C37853008FE7D4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6FD6132926C37978008FE7D4 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +42,8 @@
 		6FD6131626C37853008FE7D4 = {
 			isa = PBXGroup;
 			children = (
+				6FD6132926C37978008FE7D4 /* main.h */,
 				6FD6132226C37853008FE7D4 /* main.c */,
-				6FD6132126C37853008FE7D4 /* dataStructures-01_linkedList */,
 				6FD6132026C37853008FE7D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,13 +54,6 @@
 				6FD6131F26C37853008FE7D4 /* dataStructures-01_linkedList */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6FD6132126C37853008FE7D4 /* dataStructures-01_linkedList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "dataStructures-01_linkedList";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

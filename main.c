@@ -8,42 +8,7 @@
 //  Created by Luiz Carlos da Silva Araujo on 07/08/21.
 //
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-
-
-//##############################################################################
-//MARK: - Declarações de Tipos
-struct tAluno {
-    int matricula;
-    char nome[20];
-    int serie;
-    char turma;
-};
-
-struct tNo {
-    struct tAluno dado;
-    struct tNo *prox;
-};
-
-
-//##############################################################################
-//MARK: - Protótipos
-
-char menuPrincipal(void);
-
-struct tAluno receberDadosAluno(struct tNo *inicio);
-void listarAluno(struct tAluno, char);
-// Entradas com validações
-int atribuirMatricula(struct tNo *inicio);
-char receberValidarNome(void);
-
-
-// Utils
-struct tNo* retornarPrimeiroNo(struct tNo *inicio);
-struct tNo* retornarUltimoNo(struct tNo *inicio);
+#include "main.h"
 
 int main(int argc, const char * argv[]) {
 // Declarações

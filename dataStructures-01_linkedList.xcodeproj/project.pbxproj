@@ -41,6 +41,7 @@
 		6FD6131626C37853008FE7D4 = {
 			isa = PBXGroup;
 			children = (
+				6FD6132226C37853008FE7D4 /* main.c */,
 				6FD6132126C37853008FE7D4 /* dataStructures-01_linkedList */,
 				6FD6132026C37853008FE7D4 /* Products */,
 			);
@@ -57,7 +58,6 @@
 		6FD6132126C37853008FE7D4 /* dataStructures-01_linkedList */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6132226C37853008FE7D4 /* main.c */,
 			);
 			path = "dataStructures-01_linkedList";
 			sourceTree = "<group>";

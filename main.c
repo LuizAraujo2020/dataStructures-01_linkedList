@@ -2,22 +2,17 @@
 //  main.c
 //  estruturaDados_01
 //
-//   Lista de alunos:
-//    ESCOLA DA VIDA
+//   List of Students:
+//    School of Life
 //
-//  Created by Luiz Carlos da Silva Araujo on 07/08/21.
+//  Created by Luiz Araujo on 07/08/21.
 //
 
 #include "main.h"
 
-
 int main(int argc, const char * argv[]) {
 // Declarações
     char opcaoMenuPrincipal = '1';
-    
-    
-    //asas
-    printf(" as");
     
     struct tAluno aluno;
     
@@ -25,7 +20,7 @@ int main(int argc, const char * argv[]) {
     struct tNo *lista = NULL;
     
     // elemento/ponteiro auxiliar
-    struct tNo *p;
+    struct tNo *p = NULL;
     
     
     
@@ -99,15 +94,7 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-//##############################################################################
 //MARK: - FUNÇÕES
-
-
-
-
-
-
-
 /*
  Menus
  */
@@ -117,9 +104,9 @@ char menuPrincipal(){
     
     printf("\n### MENU PRINCIPAL ###\n");
     do{
-        printf("\n1) Cadastrar aluno;");
-        printf("\n2) Listar alunos;");
-        printf("\nS) Encerrar");
+        printf("\n1) Cadastrar aluno");
+        printf("\n2) Listar alunos");
+        printf("\nS) Sair");
         printf("\nOPCAO: ");
         fflush(stdin);
         scanf("%c", &opcao);
@@ -131,13 +118,9 @@ char menuPrincipal(){
     return opcao;
 }
 
-
-
-
-//##############################
 //MARK: - Factories
 /*
- Alunos
+ Students
  */
 struct tAluno receberDadosAluno(struct tNo *inicio) {
     char ok = 's';
@@ -166,7 +149,7 @@ struct tAluno receberDadosAluno(struct tNo *inicio) {
         
     }while(ok != 's');
     
-    printf("\nSERIE: ");
+    printf("SERIE: ");
     scanf("%d", &aluno.serie);
     
     printf("TURMA: ");
@@ -194,30 +177,6 @@ int atribuirMatricula(struct tNo *inicio) {
     
     return novaMatricula;
 }
-
-char receberValidarNome(void){
-    char nome[20], ok = 's';
-    
-    do{
-        printf("\nNOME : ");
-        fflush(stdin);
-        gets(nome);
-        
-        if((strcmp(nome, " ") == 0) || (strcmp(nome, "") == 0) || (strlen(nome) < 3)){
-            printf("\nNome invalido!\n");
-            ok = 'n';
-        }
-        
-    }while(ok != 's');
-    
-    return nome;
-}
-
-
-
-
-// Fim Factories
-//##############################
 
 
 //##############################

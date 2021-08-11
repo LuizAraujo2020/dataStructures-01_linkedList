@@ -10,10 +10,14 @@
 
 #include "main.h"
 
+
 int main(int argc, const char * argv[]) {
 // Declarações
     char opcaoMenuPrincipal = '1';
     
+    
+    //asas
+    printf(" as");
     
     struct tAluno aluno;
     
